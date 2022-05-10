@@ -1,0 +1,98 @@
+<style>
+
+ .wrapper{
+  margin:0 auto;
+  width:600px;
+  height:300px;
+  border-bottom: black;
+  z-index: 1;
+} 
+
+.clear{
+  clear:both;
+}
+.left_wall{
+  float:left;
+  width:30px;
+  height:100px;
+  background: white;
+  -webkit-animation:left-wall 12s infinite;
+  box-shadow: 0 0 0.1em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+
+  
+}
+.right_wall{
+  float:right;
+  width:30px;
+  height:100px;
+  background:white;
+  -webkit-animation:right-wall 12s infinite;
+  box-shadow: 0 0 0.1em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+
+  
+}
+.ball{
+  float:left;
+  width:50px;
+  height:50px;
+  background:url("https://img.ulule.com/display/994a1157f15efbc98a4003c559b4a3b3a63a6d35/thumbnail/180x180/avatars/2014/11/16/marvin-4.130912.130920.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius:50%;
+  margin-top:30px;
+  box-shadow: 0 0 0.1em #fff, 0 0 0.4em aquamarine, 0 0 0.4em aquamarine;
+  -webkit-animation:bounce_ball 12s linear infinite;
+}
+@-webkit-keyframes left-wall{
+  0% {margin-top:0px;}
+  25%{margin-top:200px}
+  100%{margin-top:0px}
+  
+}
+@-webkit-keyframes right-wall{
+  0% {margin-top:200px;}
+ 
+  50%{margin-top:0px}
+  100%{margin-top:200px}
+  
+}
+@-webkit-keyframes bounce_ball{
+  0% {margin-top:30px;}
+  25%{margin-left:250px;margin-top:252px}
+  50%{margin-left:490px;margin-top:30px;}
+  75%{margin-left:250px;margin-top:252px}
+  100%{margin-left:0px;margin-top:30px}
+} 
+ /* --------------- */
+
+ </style>
+ 
+
+ <div class="g">
+
+  <div class="grid"></div>
+
+  <div class="lines"></div>
+  <h1>
+    <span>Ping Pong</span>
+    <span>Ping Pong</span>
+  </h1>
+  <h2>ft_transcendence</h2>
+
+  <div class="wrapper">
+    <div class="left_wall"></div>
+    <div class="ball"></div>
+    <div class="right_wall"></div>
+    <div class="clear"></div>
+  </div>
+
+  <a href="#" class="btn-neon">
+    <span class="span1"></span>
+    <span class="span2"></span>
+    <span class="span3"></span>
+    <span class="span4"></span>
+    Start
+  </a>
+
+</div>
+ 
