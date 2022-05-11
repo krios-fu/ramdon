@@ -1,11 +1,13 @@
 <style>
 
  .wrapper{
-  margin:0 auto;
+  /* margin:0 auto; */
   width:600px;
   height:300px;
-  border-bottom: black;
-  z-index: 1;
+  /* border-bottom: black; */
+  /* border-bottom : none; */
+  /* margin-bottom: 0; */
+  z-index: 10;
 } 
 
 .clear{
@@ -13,20 +15,19 @@
 }
 .left_wall{
   float:left;
-  width:30px;
+  width:21px;
   height:100px;
   background: white;
-  -webkit-animation:left-wall 12s infinite;
+  -webkit-animation:left-wall 7s infinite;
   box-shadow: 0 0 0.1em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
 
-  
 }
 .right_wall{
   float:right;
-  width:30px;
+  width:21px;
   height:100px;
-  background:white;
-  -webkit-animation:right-wall 12s infinite;
+  background:  white;
+  -webkit-animation:right-wall 7s infinite;
   box-shadow: 0 0 0.1em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
 
   
@@ -41,14 +42,15 @@
   border-radius:50%;
   margin-top:30px;
   box-shadow: 0 0 0.1em #fff, 0 0 0.4em aquamarine, 0 0 0.4em aquamarine;
-  -webkit-animation:bounce_ball 12s linear infinite;
+  -webkit-animation:bounce_ball 7s linear infinite;
 }
 @-webkit-keyframes left-wall{
   0% {margin-top:0px;}
-  25%{margin-top:200px}
+  50%{margin-top:200px}
   100%{margin-top:0px}
   
 }
+
 @-webkit-keyframes right-wall{
   0% {margin-top:200px;}
  
@@ -59,12 +61,15 @@
 @-webkit-keyframes bounce_ball{
   0% {margin-top:30px;}
   25%{margin-left:250px;margin-top:252px}
-  50%{margin-left:490px;margin-top:30px;}
+  50%{margin-left:507px;margin-top:30px;} /* contacto con el borde */
   75%{margin-left:250px;margin-top:252px}
   100%{margin-left:0px;margin-top:30px}
 } 
  /* --------------- */
 
+ .margin{
+  margin-top: -2.5em;
+ }
  </style>
  
 
@@ -74,8 +79,9 @@
 
   <div class="lines"></div>
   <h1>
-    <span>Ping Pong</span>
-    <span>Ping Pong</span>
+    <span>PING PONG</span>
+    <span>PING PONG</span>
+    
   </h1>
   <h2>ft_transcendence</h2>
 
@@ -86,12 +92,12 @@
     <div class="clear"></div>
   </div>
 
-  <a href="#" class="btn-neon">
+  <a href="#" class="btn-neon" >
     <span class="span1"></span>
     <span class="span2"></span>
     <span class="span3"></span>
     <span class="span4"></span>
-    Start
+    START
   </a>
 
 </div>

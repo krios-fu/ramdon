@@ -13,11 +13,12 @@
   left: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 h1 {
   position: relative;
-  font-family: 'Exo';
-  font-size: 9em;
-  margin: 0;
+  font-family: 'Press Start 2P';
+  font-size: 7em;
   transform: skew(-15deg);
   letter-spacing: 0.03em;
   
@@ -45,7 +46,10 @@ h1 {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: linear-gradient(#032d50 25%, #00a1ef 35%, white 50%, #20125f 50%, #8313e7 55%, #ff61af 75%);
+    background-image: linear-gradient(#032d50 25%, #00a1ef 35%, white 50%, #20125f 50%, #8313e7 55%, #fc1689 75%);
+    
+    
+    
     -webkit-text-stroke: 0.01em #94a0b9;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -54,16 +58,20 @@ h1 {
 
 h2 {
   font-family: 'Mr Dafoe';
-  margin: 0;
-   font-size: 3.5em;
-  margin-top: -0.6em;
+  // margin: 0;
+	letter-spacing:2.5px;
+
+  position: absolute;
+  font-size: 2.5em;
+  margin-top: -3em;
+  
   color: white;
   text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
   transform: rotate(-10deg);
 }
 
 .grid {
-  $main: #7d41e6;
+  $main: #59c1fe;
   $glow: rgba(#2e26ff, 0.4);
   background: 
     linear-gradient(transparent 65%, $glow 75%, $main 80%, $glow 85%, transparent 95%),
@@ -98,10 +106,11 @@ h2 {
 	color:#fff;
 	font-size:42px;
 	text-decoration:none;
-	letter-spacing:4px;
+	letter-spacing:1px;
 	overflow:hidden;
 	transition:0.2s;
-	font-family: 'Exo';
+  font-family: 'Press Start 2P';
+
 
   }
   .btn-neon:hover{
